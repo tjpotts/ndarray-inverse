@@ -1,0 +1,25 @@
+{
+  "name": "ndarray-inverse",
+  "version": "0.1.0",
+  "description": "Invert 2-dimension ndarrays",
+  "main": "ndarray-inverse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjpotts/ndarray-inverse.git"
+  },
+  "author": "TJ Potts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjpotts/ndarray-inverse/issues"
+  },
+  "homepage": "https://github.com/tjpotts/ndarray-inverse#readme",
+  "dependencies": {
+    "ndarray": "^1.0.19",
+    "ndarray-crout-decomposition": "^1.1.0",
+    "ndarray-gemm": "^1.0.0",
+    "ndarray-scratch": "^1.2.0"
+  }
+}
