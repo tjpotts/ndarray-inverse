@@ -4,7 +4,7 @@
   "description": "Invert 2-dimension ndarrays",
   "main": "ndarray-inverse.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,10 @@
     "ndarray-crout-decomposition": "^1.1.0",
     "ndarray-gemm": "^1.0.0",
     "ndarray-scratch": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.0",
+    "jest": "^25.2.4",
+    "ndarray-ops": "^1.2.2"
   }
 }
