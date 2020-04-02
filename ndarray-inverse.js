@@ -33,7 +33,9 @@ export default function inverse(b, a) {
     let L = pool.zeros(a.shape);
     let U = pool.zeros(a.shape);
     // NOTE: crout implementation used assumes column-first indexing, hence the transposes
-    crout(a.transpose(1,0), L.transpose(1,0), U.transpose(1,0));
+    if (!crout(a.transpose(1,0), L.transpose(1,0), U.transpose(1,0))) {
+        return false;
+    }
 
     let Linv = pool.zeros(a.shape);
     let Uinv = pool.zeros(a.shape);
@@ -46,5 +48,7 @@ export default function inverse(b, a) {
     pool.free(U);
     pool.free(Linv);
     pool.free(Uinv);
+
+    return true;
 }
 
